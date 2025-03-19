@@ -1,6 +1,8 @@
 body {
     box-sizing: border-box;
     background-color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: hsl(211, 14%, 32%);
 }
 
 header {
@@ -12,9 +14,88 @@ header {
     border-bottom: 2px solid black;
 }
 
+#logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo-container > img {
+    width: 48px;
+    height: auto;
+}
+
 #nav-links-container {
     display: flex;
     flex-direction: row;
     gap: 2em;
     justify-content: space-around;
+    list-style: none;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+
+    margin: 0 auto;
+    padding-top: 7rem;
+    align-items: flex-start;
+}
+
+#home > div {
+    width: 50%;
+    padding: 24px;
+}
+
+#home > div > div {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+}
+
+#home button {
+    width: 124px;
+    color: grey;
+    font-size: 1rem;
+    text-transform: uppercase;
+
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+#home h2 {
+    font-size: 2rem;
+}
+
+#home img {
+    display: block;
+    
+    border: 2px solid lightgrey;
+    border-radius: 1rem;
+    max-width: 100%;
+    height: auto;
+}
+
+#stats {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    margin-top: 7rem;
+    background-color: lightgrey;
+}
+
+#stats .stats-card {
+    display: flex;
+    flex-direction: row;
+}
+
+#stats .stats-image {
+    padding: 15px;
+}
+
+#about {
+    
 }
